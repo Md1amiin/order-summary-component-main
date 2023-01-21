@@ -107,19 +107,22 @@ body {
         .order_info {
             display: flex;
             flex-direction: column;
-            gap: 1.8rem;
+            gap: 1.6rem;
             align-items: center;
             padding: 1.3rem;
+            padding-top: 1.6rem;
             text-align: center;
 
             .order_title {
                 font-weight: $fw-bold;
+                font-size: 1.4rem;
             }
 
             .order_details {
                 color: $neutral-color-2;
-                font-size: 1rem;
-                padding: 0 0.6rem
+                font-size: 0.95rem;
+                padding: 0rem 1.1rem;
+                line-height: 1.6;
             }
 
             .order_plan {
@@ -129,7 +132,14 @@ body {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                padding: .7rem;
+                padding: 1rem;
+
+                .plan_info {
+                    
+                    flex: 20%;
+                    padding-left: 1rem;
+                    text-align: left;
+                }
 
                 .annual {
                     color: $neutral-color-3;
@@ -142,11 +152,15 @@ body {
                     font-size: 0.8rem;
                 }
 
-                .order_plan_change {
+                .order_plan_change{
                     align-self: center;
-                    color: $neutral-color-3;
+                    color: $neutral-color-2;
                     font-size: 0.8rem;
                     font-weight: $fw-regular;
+                }
+
+                .order_plan_change a {
+                    color: $primary-color-bright-blue;
                 }
             }
 

@@ -84,18 +84,21 @@ body .order {
 body .order .order_info {
   display: flex;
   flex-direction: column;
-  gap: 1.8rem;
+  gap: 1.6rem;
   align-items: center;
   padding: 1.3rem;
+  padding-top: 1.6rem;
   text-align: center;
 }
 body .order .order_info .order_title {
   font-weight: 900;
+  font-size: 1.4rem;
 }
 body .order .order_info .order_details {
   color: hsl(224deg, 23%, 55%);
-  font-size: 1rem;
-  padding: 0 0.6rem;
+  font-size: 0.95rem;
+  padding: 0rem 1.1rem;
+  line-height: 1.6;
 }
 body .order .order_info .order_plan {
   width: 100%;
@@ -104,7 +107,12 @@ body .order .order_info .order_plan {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0.7rem;
+  padding: 1rem;
+}
+body .order .order_info .order_plan .plan_info {
+  flex: 20%;
+  padding-left: 1rem;
+  text-align: left;
 }
 body .order .order_info .order_plan .annual {
   color: hsl(223deg, 47%, 23%);
@@ -117,9 +125,12 @@ body .order .order_info .order_plan .price {
 }
 body .order .order_info .order_plan .order_plan_change {
   align-self: center;
-  color: hsl(223deg, 47%, 23%);
+  color: hsl(224deg, 23%, 55%);
   font-size: 0.8rem;
   font-weight: 700;
+}
+body .order .order_info .order_plan .order_plan_change a {
+  color: hsl(245deg, 75%, 52%);
 }
 body .order .order_info .action_buttons {
   display: flex;
